@@ -19,8 +19,11 @@ load_dotenv()
 app = Flask(__name__)
 
 # CORS — restrict to known origins in production
-ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173").split(",")
-CORS(app, origins=ALLOWED_ORIGINS)
+raw_origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173")
+if raw_origins == "*":
+    CORS(app, origins="*")
+else:
+    CORS(app, origins=raw_origins.split(","))
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
