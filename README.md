@@ -1,4 +1,4 @@
-# ⚡ Reviu AI — AI-Powered Code Review Assistant
+#  Reviu AI — AI-Powered Code Review Assistant
 
 > Paste a public GitHub repo URL → get instant code review with flagged Security, Performance, and Code Quality issues.
 
@@ -6,19 +6,19 @@
 
 ---
 
-## 🎯 What It Does
+##  What It Does
 
 Reviu AI analyzes `.py` and `.js` files from any **public** GitHub repository and flags issues across three categories:
 
 | Severity | Category | Examples |
 |----------|----------|----------|
-| 🔴 **Critical** | Security | Hardcoded secrets, `eval()`, SQL injection |
-| 🟡 **Warning** | Performance | Nested loops O(n²), `SELECT *`, blocking sleep |
-| 🟢 **Suggestion** | Code Quality | Missing docstrings, magic numbers, deep nesting |
+|  **Critical** | Security | Hardcoded secrets, `eval()`, SQL injection |
+|  **Warning** | Performance | Nested loops O(n²), `SELECT *`, blocking sleep |
+|  **Suggestion** | Code Quality | Missing docstrings, magic numbers, deep nesting |
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - **Frontend**: React 19 + Vite + Tailwind CSS
 - **Backend**: Python + Flask + Flask-CORS
@@ -27,7 +27,7 @@ Reviu AI analyzes `.py` and `.js` files from any **public** GitHub repository an
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -68,7 +68,7 @@ cp .env.example .env
 
 ```bash
 python app.py
-# ✅ Server runs at http://localhost:5000
+#  Server runs at http://localhost:5000
 ```
 
 ### 3. Frontend Setup
@@ -77,18 +77,18 @@ python app.py
 cd frontend
 npm install
 npm run dev
-# ✅ Opens at http://localhost:3000
+#  Opens at http://localhost:3000
 ```
 
 ### 4. Use it!
 
 1. Open **http://localhost:3000** in your browser
 2. Paste a public GitHub repo URL (e.g. `https://github.com/pallets/flask`)
-3. Click **Analyze Repo** and watch the magic ✨
+3. Click **Analyze Repo** and watch the magic 
 
 ---
 
-## 🔑 Getting a Free GitHub Token
+##  Getting a Free GitHub Token
 
 1. Go to [github.com/settings/tokens](https://github.com/settings/tokens)
 2. Click **"Generate new token (classic)"**
@@ -101,7 +101,7 @@ npm run dev
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 <!-- Add screenshots after running the app -->
 
@@ -109,7 +109,7 @@ npm run dev
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 reviu-ai/
@@ -136,7 +136,7 @@ reviu-ai/
 
 ---
 
-## 🏆 Hackathon Notes
+##  Hackathon Notes
 
 - **100% free** — no paid APIs, no subscriptions
 - **Works offline** after first model download (heuristic mode always works)
@@ -146,6 +146,3 @@ reviu-ai/
 
 ---
 
-## 📝 License
-
-MIT — built with ❤️ for the hackathon.
